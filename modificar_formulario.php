@@ -41,6 +41,9 @@ error_reporting(E_ALL);
     /><?php } ?>
     <label for="M">Masculino</label>
 
+    <input type="hidden" name="oculto" id="oculto" value="<?php print
+    $row['identificador']; ?>" />
+
     <input type="submit" name="submit" id="submit" value="Enviar">
   </form>
 </body>

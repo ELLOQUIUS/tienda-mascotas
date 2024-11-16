@@ -1,5 +1,5 @@
 <?php include("./conexion.php");
-$sql = "UPDATE mascota SET mascota_nombre='$_POST[mascota_nombre]',mascota_edad='$_POST[mascota_edad]',sexo='$_POST[sexo]',raza='$_POST[raza]',vacunado='$_POST[vacunado]' WHERE identificador='$_POST[identificador]'";
+$sql = "UPDATE mascota SET mascota_nombre='$_POST[mascota_nombre]',mascota_edad='$_POST[mascota_edad]',sexo='$_POST[sexo]',raza='$_POST[raza]',vacunado='$_POST[vacunado]' WHERE identificador='$_POST[oculto]'";
 $result = mysqli_query($link, $sql);
 if (!mysqli_error($link)) {
 ?>
