@@ -1,6 +1,6 @@
 <?php
   include "./conexion.php";
-  $sql="INSERT INTO mascota VALUES
+  $sql="INSERT INTO mascota (mascota_nombre,mascota_edad,raza,sexo,vacunado) VALUES
   ('$_POST[mascota_nombre]','$_POST[mascota_edad]','$_POST[sexo]','$_POST[raza]',
   '$_POST[vacunado]')";
   $result = mysqli_query($link, $sql); //ejecuto la consulta
