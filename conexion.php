@@ -7,7 +7,7 @@
     int $port = ini_get("mysqli.default_port"),
     string $socket = ini_get("mysqli.default_socket")
 ): mysqli*/
-    $link = mysqli_connect("localhost", "root", "","tienda-mascotas-miguel");
+    $link = mysqli_connect("localhost", "root", "","tienda_mascotas_miguel");
 
     if (!$link) {
     die('Error de Conexión (' . mysqli_connect_errno() . ') '
