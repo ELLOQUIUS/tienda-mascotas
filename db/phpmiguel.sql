@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS tienda-mascotas-miguel
+CREATE DATABASE IF NOT EXISTS tienda_mascotas_miguel
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_general_ci;
 
-USE tienda-mascotas-miguel;
+USE tienda_mascotas_miguel;
 
 CREATE TABLE IF NOT EXISTS usuarios (
   cedula INT(10) PRIMARY KEY NOT NULL,
@@ -35,7 +35,7 @@ VALUES
 ('Tortuic', 8, 'M','tortuga',"no"),
 ('Tuqui', 2, 'H','Loro',"si"),
 ('Pilo', 7, 'M','gato',"no"),
-('Naisu', 1, 'H','perro',"no")
+('Naisu', 1, 'H','perro',"no");
 
 INSERT INTO usuarios (cedula, nombre, apellido, direccion, email, telefono, sexo, nacionalidad, ciudad)
 VALUES
